@@ -6,20 +6,24 @@ import { components, resolve, render } from 'rndm-render';
 const Default = View;
 
 const core = ({ type, props: { children, middleware = [], ...props } = {} } = {}) => {
-  const Item = get(components, type, Default);
+  try {
+    const Item = get(components, type, Default);
 
-  const Element = (properties) => (
-    typeof Item === 'function' &&
-    <Item {...props} {...properties}>
-      {render(children)}
-    </Item>
-  );
+    const Element = (properties) => (
+      typeof Item === 'function' &&
+      <Item {...props} {...properties}>
+        {render(children)}
+      </Item>
+    );
 
-  const Resolved = resolve(middleware)(Element);
+    const Resolved = resolve(middleware)(Element);
 
-  return (
-    <Resolved />
-  );
+    return (
+      <Resolved />
+    );
+  } catch (e) {
+    return null
+  }
 };
 
 const renderers = [
