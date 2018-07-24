@@ -1,0 +1,16 @@
+{
+  "type": "react-native.View",
+  "props": {
+    "style": {
+      "height": 100,
+      "width": 100,
+      "backgroundColor": "#c4e9ff",
+      "alignItems": "center",
+      "justifyContent": "center"
+    },
+    "children": {
+      "type": "react-native.Text",
+      "children": "Hello World!"
+    }
+  }
+}
