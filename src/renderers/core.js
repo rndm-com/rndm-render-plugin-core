@@ -9,9 +9,14 @@ const core = ({ type, props: { children, middleware = [], ...props } = {} } = {}
   try {
     const Item = get(components, type, Default);
 
+    const functional = Object.keys(props).reduce((o,i) => ({
+      ...o,
+      [i]: typeof props[i] === 'object' ? render(props[i], 'RNDM.functionChain') : props[i],
+    }),{});
+
     const Element = (properties) => (
       typeof Item === 'function' &&
-      <Item {...props} {...properties}>
+      <Item {...functional} {...properties} >
         {render(children)}
       </Item>
     );
