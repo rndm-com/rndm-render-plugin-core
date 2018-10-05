@@ -136,8 +136,10 @@ export default class Logo extends Component {
       </View>
     );
 
+    const style = {width:  this.state.height * 1.2 * 1.1, height: this.state.height * 1.2};
+
     return (
-      <View style={{width:  this.state.height * 1.2 * 1.1, height: this.state.height * 1.2}}>{
+      <View style={style}>{
         ['ios', 'web'].includes(Platform.OS) ?
           Animation :
           <Image
