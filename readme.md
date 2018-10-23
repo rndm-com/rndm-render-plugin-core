@@ -13,7 +13,7 @@ If you have not already done so, then please ensure you have installed the [RNDM
 ### From NPM
 
 ```sh
-npm install --save-dev @rndm/render-plugin-core
+npm install --save @rndm/render-plugin-core
 ```
 
 ### Post Installation
