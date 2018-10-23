@@ -1,0 +1,19 @@
+{
+  "name": "@rndm/render-plugin-core",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "author": "RNDM",
+  "license": "Apache-2.0",
+  "description": "RNDM Render Plugin: Core. Core functionality for RNDM Render",
+  "homepage": "https://github.com/rndm-com/rndm-render-plugin-core#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rndm-com/rndm-render-plugin-core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rndm-com/rndm-render-plugin-core/issues"
+  },
+  "dependencies": {
+    
+  }
+}
