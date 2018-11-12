@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import { get } from 'lodash';
-import { components, resolve, render } from 'rndm-render';
+import { components, resolve, render } from '@rndm/render';
 
 const Default = View;
 

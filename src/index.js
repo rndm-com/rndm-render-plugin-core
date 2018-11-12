@@ -1,5 +1,5 @@
 import React from 'react';
-import { use } from 'rndm-render';
+import { use } from '@rndm/render';
 import methods from './methods';
 import components from './components';
 import renderers from './renderers';

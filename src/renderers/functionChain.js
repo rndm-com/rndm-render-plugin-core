@@ -1,5 +1,5 @@
 import { noop, get } from 'lodash';
-import { methods } from 'rndm-render';
+import { methods } from '@rndm/render';
 
 const functionChain = (input) => {
   if (typeof input === 'function') return input;
