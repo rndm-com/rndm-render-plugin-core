@@ -1,6 +1,6 @@
 {
   "name": "@rndm/render-plugin-core",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "src/index.js",
   "author": "RNDM",
   "license": "Apache-2.0",
@@ -12,8 +12,5 @@
   },
   "bugs": {
     "url": "https://github.com/rndm-com/rndm-render-plugin-core/issues"
-  },
-  "dependencies": {
-    
   }
 }

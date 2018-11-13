@@ -1,25 +1,30 @@
 import React from 'react';
 import { View } from 'react-native';
 import { get } from 'lodash';
-import { components, resolve, render } from 'rndm-render';
+import { components, resolve, render } from '@rndm/render';
 
 const Default = View;
+
+const applyFunctions = props => Object.keys(props).reduce((o,i) => ({
+  ...o,
+  [i]: typeof props[i] === 'object' ? render(props[i], 'RNDM.functionChain') : props[i],
+}),{});
 
 const core = ({ type, props: { children, middleware = [], ...props } = {} } = {}) => {
   try {
     const Item = get(components, type, Default);
 
-    const functional = Object.keys(props).reduce((o,i) => ({
-      ...o,
-      [i]: typeof props[i] === 'object' ? render(props[i], 'RNDM.functionChain') : props[i],
-    }),{});
+    const functional = applyFunctions(props);
 
-    const Element = (properties) => (
-      typeof Item === 'function' &&
-      <Item {...functional} {...properties} >
-        {render(children)}
-      </Item>
-    );
+    const Element = (properties) => {
+      if (typeof Item !== 'function') return null;
+      const additionalFunctional = applyFunctions(properties);
+      const merged = merge({}, functional, additionalFunctional, { children: render(additionalFunctional.children || children) });
+      return (
+        typeof Item === 'function' &&
+        <Item {...merged} />
+      );
+    };
 
     const Resolved = resolve(middleware)(Element);
 
