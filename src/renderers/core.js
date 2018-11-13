@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import { get } from 'lodash';
+import { get, merge } from 'lodash';
 import { components, resolve, render } from '@rndm/render';
 
 const Default = View;
