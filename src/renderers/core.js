@@ -19,7 +19,7 @@ const core = ({ type, props: { children, middleware = [], ...props } = {} } = {}
     const Element = (properties) => {
       if (typeof Item !== 'function') return null;
       const additionalFunctional = applyFunctions(properties);
-      const merged = merge({}, functional, additionalFunctional, { children: render(additionalFunctional.children || children) });
+      const merged = merge({}, functional, additionalFunctional, { children: render(additionalFunctional.children || children) || undefined });
       return (
         typeof Item === 'function' &&
         <Item {...merged} />
