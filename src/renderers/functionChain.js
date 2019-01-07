@@ -10,7 +10,8 @@ const functionChain = (input, additional) => {
     return get(additional, getter, or);
   }
   if (typeof input !== 'object' || !input.isFunc) return input;
-  const { type, args, execute} = input;
+  const { type: inType, args, execute} = input;
+  const type = functionChain(inType, additional);
   const method = () => {
     try {
       return get(methods, type, noop)(...args.map(arg => functionChain(arg, additional)));
