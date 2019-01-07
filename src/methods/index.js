@@ -6,11 +6,11 @@ import and from './and';
 const methods = [
   {
     type: 'Number.parseFloat',
-    value: Number.parseFloat,
+    value: (input, defaultValue = Number.NaN) => Number.parseFloat(input) || defaultValue,
   },
   {
     type: 'Number.parseInt',
-    value: Number.parseInt,
+    value: (input, defaultValue = Number.NaN) => Number.parseInt(input) || defaultValue,
   },
   {
     type: 'Logical.or',
