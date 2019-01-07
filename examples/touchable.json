@@ -21,7 +21,9 @@
         },
         "children": {
           "type": "react-native.Text",
-          "children": "Hello World!"
+          "props": {
+            "children": "Hello World!"
+          }
         }
       }
     }

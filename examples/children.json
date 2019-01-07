@@ -11,11 +11,15 @@
     "children": [
       {
         "type": "react-native.Text",
-        "children": "Hello World!"
+        "props": {
+          "children": "Hello World!"
+        }
       },
       {
         "type": "react-native.Text",
-        "children": "Another Child!"
+        "props": {
+          "children": "Another Child!"
+        }
       }
     ]
   }
