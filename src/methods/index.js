@@ -6,29 +6,29 @@ import and from './and';
 const methods = [
   {
     type: 'Number.parseFloat',
-    value: Number.parseFloat,
-  },
-  {
-    type: 'Number.parseInt',
-    value: Number.parseInt,
-  },
-  {
-    type: 'Logical.or',
+    value: (input, defaultValue = Number.NaN) => Number.parseFloat(input) || defaultValue,
+},
+{
+  type: 'Number.parseInt',
+    value: (input, defaultValue = Number.NaN) => Number.parseInt(input) || defaultValue,
+},
+{
+  type: 'Logical.or',
     value: or,
-  },
-  {
-    type: 'Logical.and',
+},
+{
+  type: 'Logical.and',
     value: and,
-  },
-  {
-    type: 'log',
+},
+{
+  type: 'log',
     value: console.log,
-  },
-  {
-    type: 'concatenate',
+},
+{
+  type: 'concatenate',
     value: concatenate,
-  },
-  ...generate(Math, 'Math'),
+},
+...generate(Math, 'Math'),
 ];
 
 export default methods;
