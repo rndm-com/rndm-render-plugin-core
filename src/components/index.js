@@ -1,5 +1,6 @@
 import Logo from './Logo';
 import Renderer from './Renderer';
+import Empty from './Empty';
 
 const components = [
   {
@@ -9,6 +10,10 @@ const components = [
   {
     type: 'Renderer',
     value: Renderer,
+  },
+  {
+    type: 'Empty',
+    value: Empty,
   },
 ];
 
