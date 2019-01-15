@@ -18,7 +18,7 @@ npm install --save @rndm/render-plugin-core
 
 ### Post Installation
 
-In order to allow this plugin to work, it must first be included in your project. You can do this inside yout main index file:
+In order to allow this plugin to work, it must first be included in your project. You can do this inside your main index file:
 
 ```javascript
 import '@rndm/render-plugin-core';
@@ -240,7 +240,7 @@ The Core renderer is the default renderer that takes well formed JSON/ JavaScrip
     type: 'RNDM.Logo'
 }
 
-This will create a RNDM Logo component. However, more complex elements cna be constructed to create full pages, views and methods complete with full functionality!
+This will create a RNDM Logo component. However, more complex elements can be constructed to create full pages, views and methods complete with full functionality!
 
 A pseudo-code version of a more complex object might look like the below:
 
@@ -282,4 +282,4 @@ As you can note from the above, Children can be passed in as objects, arrays of 
 
 #### Function Chain
 
-This renderer can be used to determine the output of a chain og funcitons providing the end result.
+This renderer can be used to determine the output of a chain of functions providing the end result.
