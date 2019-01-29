@@ -3,11 +3,16 @@ import concatenate from './concatenate';
 import or from './or';
 import and from './and';
 import renderItem from './renderItem';
+import toString from './toString';
 
 const methods = [
   {
     type: 'renderItem',
     value: renderItem,
+  },
+  {
+    type: 'toString',
+    value: toString,
   },
   {
     type: 'Number.parseFloat',
