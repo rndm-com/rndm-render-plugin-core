@@ -1,14 +1,14 @@
-# RNDM Render Plugin: Core
+# [RNDM](https://www.rndm.com) Render Plugin: Core
 
 ## About
 
-This plugin provides the core functionality for the [RNDM Render package](https://github.com/rndm-com/rndm-render).
+This plugin provides the core functionality for the [RNDM Render package](https://www.rndm.com/docs/rndm-render).
 
-_**Please Note**: This plugin is also contained within the [Core Preset](https://github.com/rndm-com/rndm-render-preset-core) package, which also includes other functionality such as React Native components and lodash methods. If you are looking to get started, we highly recommend the [RNDM Client](https://github.com/rndm-com/rndm-client) which includes the standard [RNDM Render](https://github.com/rndm-com/rndm-render) and the core plugin._
+_**Please Note**: This plugin is also contained within the [Core Preset](https://www.rndm.com/docs/rndm-render/preset/core) package, which also includes other functionality such as React Native components and lodash methods. If you are looking to get started, we highly recommend the [RNDM Client](https://github.com/rndm-com/rndm-client) which includes the standard [RNDM Render](https://www.rndm.com/docs/rndm-render) and the core plugin._
 
 ## Installation
 
-If you have not already done so, then please ensure you have installed the [RNDM Render](https://github.com/rndm-com/rndm-render) package.
+If you have not already done so, then please ensure you have installed the [RNDM Render](https://www.rndm.com/docs/rndm-render) package.
 
 ### From NPM
 
@@ -283,3 +283,5 @@ As you can note from the above, Children can be passed in as objects, arrays of 
 #### Function Chain
 
 This renderer can be used to determine the output of a chain of functions providing the end result.
+
+Check out the [Playground](https://www.rndm.com/playground) page to see how these features work.
