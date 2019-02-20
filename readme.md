@@ -283,3 +283,5 @@ As you can note from the above, Children can be passed in as objects, arrays of 
 #### Function Chain
 
 This renderer can be used to determine the output of a chain of functions providing the end result.
+
+Check out the [Playground](https://www.rndm.com/playground) page to see how these features work.
